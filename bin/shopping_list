@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+$LOAD_PATH << File.expand_path('../../lib', __FILE__)
+require 'shopping_list'
+
+vendors = File.read('lib/input/vendors.txt')
+
+shop = ShoppingList::Shop.new(vendors)
+while shop.continue
+  shop.go_shopping
+end

@@ -1,0 +1,7 @@
+To run:
+  bin/shopping_list
+
+To run tests:
+  rspec
+
+Using ruby 2.0.0p247
